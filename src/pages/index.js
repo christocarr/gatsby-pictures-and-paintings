@@ -1,6 +1,8 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Button from '../components/BuyButton'
+
+import Product from '../components/Product'
+// import Button from '../components/BuyButton'
 
 const Gallery = () => {
 
@@ -26,8 +28,13 @@ const Gallery = () => {
         {data.allStripeSku.edges.map((edge) => {
           return (
             <li key={edge.node.id}>
-              <img src={edge.node.image} alt={edge.node.product.name}/>
-              <Button id={edge.node.id} />
+              <Product 
+              src={edge.node.image} 
+              alt={edge.node.product.name} 
+              id={edge.node.id}
+              />
+              {/* <img src={edge.node.image} alt={edge.node.product.name}/> */}
+              {/* <Button id={edge.node.id} /> */}
             </li>
           )
         })}
