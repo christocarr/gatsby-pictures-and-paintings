@@ -1,0 +1,13 @@
+.navbar {
+  background-color: var(--main-bg-color);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  font-size: 2em;
+}

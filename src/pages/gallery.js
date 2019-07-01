@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 
-const index = () => {
+const gallery = () => {
   return (
     <Layout>
 
@@ -9,4 +9,4 @@ const index = () => {
   )
 }
 
-export default index
+export default gallery

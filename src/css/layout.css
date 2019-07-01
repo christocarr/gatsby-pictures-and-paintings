@@ -1,0 +1,494 @@
+/*----------------------------------
+          CSS VARIABLES
+-----------------------------------*/
+:root {
+
+  /*----site colors------*/
+  --main-text-color: #494949;
+  --main-bg-color: #f5f3f3;
+  --mobile-menu-color: #cfcece;
+  --sec-bg-color: white;
+  --main-border-color:  #b9b8b8;
+  --overlay-color:  rgba(245, 243, 243, 0.5);
+  --h1-color: white;
+  --h2-color: #cfcece;
+
+  /*----font sizes------*/
+  --root-font-size: 14px;
+  --h1-font-size: 2.1em;
+  --h2-font-size: 1.5em;
+  --h3-font-size: 1.2em;
+  --p-font-size: 1em;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--root-font-size);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--main-text-color);
+}
+
+/* icon styles */
+.fas {
+  font-size: 1.3em;
+  color: var(--main-text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+  transition: color 0.7s ease;
+}
+
+a:hover {
+  cursor: pointer;
+  color: #a00202;
+  background-color: white;
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  color: var(--h1-color);
+  font-size: var(--h1-font-size);
+}
+
+h2 {
+  color: var(--h2-color);
+  font-size: var(--h2-font-size);
+}
+
+h3 {
+  color: var(--main-text-color);
+  font-size: var(--h3-font-size);
+  background-color: #ece8e8;
+  padding: 0.5em;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+section,
+footer {
+  padding: 1em 0 2em 0;
+}
+
+/*-------------------------------------------
+                nav styles
+-------------------------------------------*/
+
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 3em;
+  background-color: var(--main-bg-color);
+}
+
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  width: 80%;
+}
+
+.nav-items ul {
+  display: none;
+} 
+
+.menu {
+  display: flex;
+  align-items: center;
+  width: 10%;
+  height: 60%;
+  padding: 0.5em 0.5em 0.5em 0;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.open-nav {
+  position: absolute;
+  z-index: 1003;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--mobile-menu-color);
+}
+
+.mobile-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile-nav li {
+  padding: 1em;
+}
+
+.toggle {
+  display: none;
+}
+
+/*-------------------cart styles------------------*/
+
+.cart-button {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+
+.cart-button a {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 40%;
+  height: 70%;
+  text-decoration: none;
+  color: var(--main-text-color);
+  background-color: var(--sec-bg-color);
+  border: 1px solid var(--main-border-color);
+} 
+
+.cart {
+  position: absolute;
+  top: 3em;
+  right: 0;
+  width: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 10em;
+  transition: all 0.3s ease-in-out;
+  overflow: hidden;
+  background-color: var(--main-bg-color);
+}
+
+.show-cart {
+  width: 18em;
+  transform: rotateY(-360deg);
+}
+
+/*-------------------------------------------
+            end nav styles
+-------------------------------------------*/
+
+/*-------------------------------------------
+                banner styles
+-------------------------------------------*/
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  padding: 2em;
+  /* background: url(./images/13.Red_Evening.jpg) center /
+  cover no-repeat; */
+}
+
+.banner span {
+  color: white;
+}
+
+/*-------------------------------------------
+               end banner styles
+-------------------------------------------*/
+
+/*-------------------------------------------
+            gallery section styles
+-------------------------------------------*/
+
+.gallery {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+.gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.gallery h3 {
+  width: 80%;
+  margin: 2em 0 0 0;;
+}
+
+.gallery-item {
+  position: relative;
+  width: 80%;
+  margin: 1em 0 0 0;
+  overflow: hidden;
+
+}
+
+.gallery-item:last-of-type {
+  margin: 1em 0 1em 0;
+}
+
+.gallery-item img {
+  width: 100%;
+  transition: all 1.7s ease;
+}
+
+.gallery-item img:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+
+/*-------------------------------------------
+            end gallery section styles
+-------------------------------------------*/
+/*-------------------------------------------
+            about section styles
+-------------------------------------------*/
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--sec-bg-color);
+}
+
+.about h3 {
+  width: 80%;
+  margin: 2em 0 0.5em 0;
+}
+
+.about p {
+  width: 80%;
+  margin: 0 0 1em 0;
+}
+
+/*-------------------------------------------
+            end about section styles
+-------------------------------------------*/
+/*-------------------------------------------
+            form section styles
+-------------------------------------------*/
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--main-bg-color);
+}
+
+.form-wrapper h3 {
+  width: 80%;
+  margin: 2em 0 0.5em 0;
+}
+
+.form-wrapper form {
+  width: 80%;
+  margin: 0 0 1em 0;
+}
+
+form input,
+form label,
+form textarea {
+  display: block;
+  width: 100%;
+}
+
+form label,
+form button {
+  margin: 0.5em 0 0 0;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 0.3em;
+}
+
+form button {
+  width: 100%;
+}
+
+form button:hover {
+  cursor: pointer;
+}
+
+/*-------------------------------------------
+            end form section styles
+-------------------------------------------*/
+
+footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--sec-bg-color);
+}
+footer p {
+  margin: 1em 0 1em 0;
+}
+
+footer span {
+  font-size: var(--h3-font-size);
+}
+
+footer ul {
+  margin: 1em 0 1em 0;
+}
+
+footer ul a {
+  margin: 0 0.5em 0 0;
+  padding: 0.5em;
+}
+
+footer ul a:last-of-type {
+  margin: 0;
+}
+
+/*-------------------------------------------
+                media queries
+-------------------------------------------*/
+
+@media only screen and (min-width: 768px) {
+  :root {
+    --root-font-size: 16px;
+  }
+  
+  .menu-open {
+    display: none;
+  }
+
+  .nav-items ul {
+    display: flex;
+    width: 60%;
+  } 
+
+  .nav-items li {
+    display: inline;
+    margin: 0 1em 0 0;
+  }
+
+  .nav-items li a {
+    padding: 0.5em;
+  }
+
+  .cart-button {
+    width: 50%;
+  }
+
+  .nav-shopping-cart {
+    width: 40%;
+  }
+
+  .gallery-wrapper {
+    width: 80%;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery-item {
+    width: 45%;
+    margin: 1em 1em 0 0;
+  }
+
+  .gallery-item:nth-child(2) {
+    margin-right: 0;
+  }
+
+  .form-wrapper form {
+    width: 60%;
+  }
+
+  footer {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (min-width: 1224px) {
+
+  * {
+    font-size: 16px;
+  }
+
+  section,
+  footer {
+    padding: 1.5em 0 2.5em 0;
+  }
+
+
+  nav {
+    height: 4em;
+  }
+
+  .nav-items {
+    width: 50%;
+  }
+
+  .banner {
+    height: 50vh;
+  }
+
+  .gallery h3 {
+    width: 50%;
+  }
+
+  .gallery-wrapper {
+    width: 50%;
+  }
+
+  .gallery-item {
+    width: 30%;
+    margin: 1em 1em 0 0;
+  }
+
+  .gallery-item:nth-child(2) {
+    margin-right: 1em;
+  }
+
+  .gallery-item:nth-child(3) {
+    margin-right: 1em;
+  }
+
+  .about h3,
+  .form-wrapper h3,
+  .about p {
+    width: 50%;
+  }
+
+  .form-wrapper form {
+    width: 30%;
+  }
+
+  form input,
+  form textarea {
+    margin: 0.5em 0 0 0;
+  }
+}
