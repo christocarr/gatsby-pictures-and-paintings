@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styles from '../css/navbar.module.css'
 import { FaBars } from 'react-icons/fa'
 
@@ -20,8 +20,8 @@ const Navbar = () => {
         </button>
       </div>
       <ul className={isOpen ? `${styles.navLinks} ${styles.showNav} ` : `${styles.navLinks}`}>
-        <Link to="/">Home</Link>
-        <Link to="/gallery">Gallery</Link>
+        <AniLink fade to="/">Home</AniLink>
+        <AniLink fade to="/gallery">Gallery</AniLink>
       </ul>
     </nav>
   )
