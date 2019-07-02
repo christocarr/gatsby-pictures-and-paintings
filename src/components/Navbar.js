@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import styles from '../css/navbar.module.css'
-import { faBars } from 'react-icons/fa'
+import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
 
@@ -13,17 +13,16 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-      <div className={styles.center}>
-        <div>
-          <h1>Logo</h1>
-          <button className={styles.icon} onClick={toggleNav}>
-            <faBars />
+        <div className={styles.center}>
+          <h1 className={styles.logo}>Logo</h1>
+          <button className={styles.menuButton} onClick={toggleNav}>
+            <FaBars className={styles.menuIcon}/>
           </button>
         </div>
         <ul className={isOpen ? `${styles.navLinks} ${styles.showNav} ` : `${styles.navLinks}`}>
           <Link to="/">Home</Link>
+          <Link to="/gallery">Gallery</Link>
         </ul>
-      </div>  
     </nav>
   )
 }
