@@ -13,16 +13,16 @@ const Navbar = () => {
 
   return (
     <nav className={styles.navbar}>
-        <div className={styles.center}>
-          <h1 className={styles.logo}>Logo</h1>
-          <button className={styles.menuButton} onClick={toggleNav}>
-            <FaBars className={styles.menuIcon}/>
-          </button>
-        </div>
-        <ul className={isOpen ? `${styles.navLinks} ${styles.showNav} ` : `${styles.navLinks}`}>
-          <Link to="/">Home</Link>
-          <Link to="/gallery">Gallery</Link>
-        </ul>
+      <div className={styles.center}>
+        <h1 className={styles.logo}>Logo</h1>
+        <button className={styles.menuButton} onClick={toggleNav}>
+          <FaBars className={styles.menuIcon}/>
+        </button>
+      </div>
+      <ul className={isOpen ? `${styles.navLinks} ${styles.showNav} ` : `${styles.navLinks}`}>
+        <Link to="/">Home</Link>
+        <Link to="/gallery">Gallery</Link>
+      </ul>
     </nav>
   )
 }

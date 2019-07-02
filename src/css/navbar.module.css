@@ -18,10 +18,6 @@
   height: 2.5rem;
 }
 
-/* .menu-button:hover {
-  cursor: pointer;
-} */
-
 .menu-icon {
   font-size: 1.5rem;
 }
@@ -51,16 +47,20 @@
 
 
 @media screen and (min-width: 992px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .menu-button {
     display: none;
   }
 
   .center {
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 50%;
+    margin: 0;
+    flex-direction: row;
   }
 
   .nav-links {
@@ -68,7 +68,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     margin-bottom: 0;
   }
 
