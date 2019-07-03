@@ -8,10 +8,17 @@ module.exports = {
     description: `Painting Art Store`
   },
   plugins: [
-    `gatsby-plugin-stripe`,
-    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      }
+    },
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
+    `gatsby-plugin-stripe`,
     {
       resolve: `gatsby-source-stripe`,
       options: {
