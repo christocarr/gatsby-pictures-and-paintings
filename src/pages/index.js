@@ -1,12 +1,27 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
+import Banner from '../components/Banner'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
-const index = () => {
-  return (
-    <Layout>
+export default ({ data }) => (
+  <Layout>
+    <Hero home="true" img={data.defaultBcg.childImageSharp.fluid}>
+      <Banner title="Pictures and Paintings" info="affordable art" />
+      <AniLink fade to="/gallery">Gallery</AniLink>
+    </Hero>
+  </Layout>
+)
 
-    </Layout>
-  )
-}
-
-export default index
+export const query = graphql`
+  query {
+    defaultBcg: file(relativePath: {eq: "default.jpg"}) {
+      childImageSharp {
+        fluid(maxWidth:4160, quality: 90) {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`
