@@ -32,6 +32,13 @@ module.exports = {
       options: {
         async: true
       }
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.SPACE_ID,
+        accessToken: process.env.CONTENT_DELIVERY_API
+      }
     }
   ]
 }
