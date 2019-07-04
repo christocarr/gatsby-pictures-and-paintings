@@ -17,7 +17,7 @@ const getPaintings = graphql`
           medium
           image {
             fluid {
-              src
+              ...GatsbyContentfulFluid
             }
           }
         }
