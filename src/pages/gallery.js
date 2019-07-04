@@ -7,12 +7,11 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 export default ({ data }) => (
   <Layout>
     <Hero img={data.defaultBcg.childImageSharp.fluid}>
-      <Banner title="Pictures and Paintings" info="affordable art" />
-      <AniLink fade to="/gallery">Gallery</AniLink>
-    </Hero>
+  {/* <Paintings /> component goes here */} 
   </Layout>
 )
 
+/* get contentful image instead of local image */
 export const query = graphql`
   query {
     defaultBcg: file(relativePath: {eq: "default.jpg"}) {
