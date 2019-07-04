@@ -15,7 +15,7 @@ export default styled(Hero)`
   flex-direction: column;
   justify-content: center;
   align-items:center;
-  min-height: ${props => props.home ? "80vh" : "50vh" }
+  min-height: ${props => props.home ? "80vh" : "30vh" }
   background-position: center;
   background-size: cover;
 
