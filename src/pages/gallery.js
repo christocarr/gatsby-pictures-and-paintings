@@ -1,12 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
-import Banner from '../components/Banner'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import { graphql } from 'gatsby';
 
 export default ({ data }) => (
   <Layout>
-    <Hero img={data.defaultBcg.childImageSharp.fluid}>
+    <Hero img={data.image.childImageSharp.fluid} />
   {/* <Paintings /> component goes here */} 
   </Layout>
 )
@@ -14,10 +13,10 @@ export default ({ data }) => (
 /* get contentful image instead of local image */
 export const query = graphql`
   query {
-    defaultBcg: file(relativePath: {eq: "default.jpg"}) {
+    image: file(relativePath: {eq: "gallery-hero.jpg"}) {
       childImageSharp {
-        fluid(maxWidth:4160, quality: 90) {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid {
+          ...GatsbyImageSharpFluid
         }
       }
     }
