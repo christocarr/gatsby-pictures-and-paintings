@@ -1,12 +1,14 @@
 import React from 'react'
 import Img from 'gatsby-image'
 
+import styles from '../css/painting.module.css'
+
 const Painting = ({ painting }) => {
   const { title, id, slug, price, size, medium, image } = painting
-  console.log(image.fluid)
+
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className={styles.paintingContainer}>
+      <h3>{title}</h3>
       <Img fluid={image.fluid} />
     </div>
   )
