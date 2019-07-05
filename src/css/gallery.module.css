@@ -6,7 +6,7 @@
 
 @media screen and (min-width: 1023px) {
   .gallery-container {
-    width: 70%;
+    width: 80%;
     flex-direction: row;
     justify-content: center;
     align-items: center;

@@ -5,6 +5,7 @@
 
 @media screen and (min-width: 1023px) {
   .painting-container {
-    width: 50%;
+    width: 40%;
+    margin: 5rem 2rem 0 2rem;
   }
 }
