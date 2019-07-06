@@ -3,14 +3,16 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Banner from '../components/Banner'
+import About from '../components/About'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export default ({ data }) => (
   <Layout>
     <Hero home="true" img={data.defaultBcg.childImageSharp.fluid}>
-      <Banner title="Pictures and Paintings" info="affordable art" />
-      <AniLink fade to="/gallery">Gallery</AniLink>
+      <Banner title="Pictures and Paintings" />
+      <AniLink fade to="/gallery" className="link"><button className="btn-primary">Gallery</button></AniLink>
     </Hero>
+    <About />
   </Layout>
 )
 
