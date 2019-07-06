@@ -22,6 +22,7 @@ const Navbar = () => {
       <ul className={isOpen ? `${styles.navLinks} ${styles.showNav} ` : `${styles.navLinks}`}>
         <AniLink fade to="/">Home</AniLink>
         <AniLink fade to="/gallery">Gallery</AniLink>
+        <AniLink fade to="/contact">Contact</AniLink>
       </ul>
     </nav>
   )
