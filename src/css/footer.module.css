@@ -1,4 +1,3 @@
-footer {
-  height: 10vh;
-  background-color: var(--main-bg-color);
+.footer-nav a {
+  margin-left: 1rem;
 }
