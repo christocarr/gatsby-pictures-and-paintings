@@ -3,6 +3,7 @@ require("dotenv").config({
 });
 
 module.exports = {
+  pathPrefix: "/gatsby-pictures-and-paintings",
   siteMetadata: {
     title: `Pictures and Paintings`,
     description: `Painting Art Store`
