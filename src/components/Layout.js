@@ -8,12 +8,14 @@ import '../css/layout.css'
 
 const Layout = ({ children }) => {
   return (
-    <main>
-      <Navbar />
-        <Hero />
-        { children }
+    <>
+      <main>
+        <Navbar />
+          <Hero />
+          { children }
+      </main>
       <Footer />
-    </main>
+    </>
   )
 }
 
