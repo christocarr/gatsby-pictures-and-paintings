@@ -1,15 +1,16 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import Hero from '../components/Hero'
 import Img from 'gatsby-image'
 
 import styles from '../css/product.module.css'
 
 const Template = ({ data }) => {
   const { title, price, image, size, medium } = data.painting
-  console.log(image.fluid)
   return (
     <Layout>
+      <Hero img={image.fluid} />
       <section>
         <h3>{title}</h3>
         <div className={styles.imgContainer}>
