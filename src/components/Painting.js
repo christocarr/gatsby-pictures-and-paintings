@@ -11,7 +11,7 @@ const Painting = ({ painting }) => {
       <div className={styles.paintingContainer}>
         <h3>{title}</h3>
         <Img fluid={image.fluid} />
-        <AniLink fade to="/" className={styles.btnDetails}>Details</AniLink>
+        <AniLink fade to={`/paintings/${slug}`} className={styles.btnDetails}>Details</AniLink>
       </div>
 
   )
