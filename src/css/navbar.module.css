@@ -31,11 +31,14 @@
 }
 
 .show-nav {
-  height: 200px;
+  /* border-top: 1px solid var(--main-border-color); */
+  height: 130px;
+  padding: 1rem 0;
   background-color: var(--main-bg-color);
 }
 
 .nav-links a {
+  font-size: 1.3em;
   display: block;
   margin: 0.5rem 0 0 0;
   text-decoration: none;
