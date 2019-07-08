@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
 import Img from 'gatsby-image'
+import Title from '../components/Title'
 
 import styles from '../css/product.module.css'
 
@@ -12,14 +13,19 @@ const Template = ({ data }) => {
     <Layout>
       <Hero img={image.fluid} />
       <section>
-        <h3>{title}</h3>
+        <Title title={title} />
         <div className={styles.imgContainer}>
           <Img fluid={image.fluid} alt={title} className={styles.painting} />
         </div>
         <div className={styles.info}>
-          <p>{size}</p>
-          <p>{medium}</p>
-          <p>{`£${price}`}</p>
+          <div className={styles.desc}>
+            <p>{`Size: ${size}`}</p>
+            <p>{`Medium: ${medium}`}</p>
+          </div>
+          <div className={styles.price}>
+            <p>{`£${price}`}</p>
+            <button className={styles.buyButton}>Buy Now</button>
+        </div>
         </div>
       </section>
     </Layout>
