@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styles from '../css/navbar.module.css'
 import { FaBars } from 'react-icons/fa'
+import logo from '../images/PandP_logo_50px_high.png'
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.center}>
-        <h1 className={styles.logo}>Logo</h1>
+        <img src={logo} alt="logo" />
         <button className={styles.menuButton} onClick={toggleNav}>
           <FaBars className={styles.menuIcon}/>
         </button>
