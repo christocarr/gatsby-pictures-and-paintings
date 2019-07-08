@@ -1,8 +1,9 @@
-import React from 'react' 
+import React from 'react'
+import Title from '../components/Title'
 
 const About = () => (
   <section>
-    <h2>About Us</h2>
+    <Title title="About Us" />
     <div>
       <p>The artworks on offer in our gallery represents a variety of genres, executed in oils, acrylics and mixed media. All  the paintings featured on this website are original and are reasonably priced.</p>
 
