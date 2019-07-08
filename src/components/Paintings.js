@@ -31,9 +31,11 @@ const Paintings = () => {
   const { paintings } = useStaticQuery(getPaintings)
   
   return (
-    <section className={styles.galleryContainer}>
+    <section>
       <Title title="Gallery" />
-      <PaintingList paintings={ paintings } />
+      <div className={styles.galleryContainer}>
+        <PaintingList paintings={ paintings } />
+      </div>
     </section>
   )
 

@@ -23,7 +23,6 @@
   --main-transition: all 0.3s linear;
 }
 
-
 * {
   margin: 0;
   padding: 0;
@@ -49,13 +48,8 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 1rem auto;
-  padding: 1rem;
   width: 90%;
   text-align: left;
-}
-
-h2 {
-  margin: 1rem 0 1rem 0;
 }
 
 .btn-primary {
@@ -81,6 +75,12 @@ footer {
   height: 10vh;
   background-color: var(--main-bg-color);
   padding: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  section {
+    width: 80%;
+  }
 }
 
 @media screen and (min-width: 1024px) {

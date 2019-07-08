@@ -1,7 +1,7 @@
 .painting-container {
   position: relative;
   width: 80%;
-  height: 20rem;
+  height: auto;
   margin: 2rem 0 0 0;
   overflow: hidden;
 }
