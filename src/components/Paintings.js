@@ -1,8 +1,7 @@
-//get all contentful paintings
-
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import PaintingList from './PaintingList'
+import Title from '../components/Title'
 
 import styles from '../css/gallery.module.css'
 
@@ -32,9 +31,10 @@ const Paintings = () => {
   const { paintings } = useStaticQuery(getPaintings)
   
   return (
-    <div className={styles.galleryContainer}>
+    <section className={styles.galleryContainer}>
+      <Title title="Gallery" />
       <PaintingList paintings={ paintings } />
-    </div>
+    </section>
   )
 
 }
