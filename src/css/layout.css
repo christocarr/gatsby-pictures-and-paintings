@@ -47,7 +47,7 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 1rem auto;
+  margin: 3rem auto;
   width: 90%;
   text-align: left;
 }
@@ -55,7 +55,7 @@ section {
 .btn-primary {
   padding: 0.5rem 1rem;
   background-color: transparent;
-  border: black solid;
+  border: white solid;
   margin: 1rem;
 }
 
@@ -70,16 +70,20 @@ section {
 
 footer {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-evenly;
-  margin-top: auto;
-  height: 10vh;
+  align-items: center;
+  height: 15vh;
   background-color: var(--main-bg-color);
-  padding: 1rem;
 }
 
 @media screen and (min-width: 768px) {
   section {
     width: 80%;
+  }
+
+  footer {
+    flex-direction: row;
   }
 }
 

@@ -1,3 +1,11 @@
+.footer-nav {
+  margin: 0;
+}
+
 .footer-nav a {
   margin-left: 1rem;
+}
+
+.copyright {
+  margin: 0;
 }

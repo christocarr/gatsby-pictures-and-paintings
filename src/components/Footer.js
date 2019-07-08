@@ -6,7 +6,7 @@ import styles from '../css/footer.module.css'
 const Footer = () => {
   return (
     <footer>
-      <p>
+      <p className={styles.copyright}>
         &copy; Richard Carr 2019 - All rights reserved
       </p>
       <ul className={styles.footerNav}>
