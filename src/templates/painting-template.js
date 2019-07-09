@@ -13,7 +13,9 @@ const Template = ({ data }) => {
     <Layout>
       <Hero img={image.fluid} />
       <section>
-        <Title title={title} />
+        <div className="page-title">
+          <Title title={title} />
+        </div>
         <div className={styles.imgContainer}>
           <Img fluid={image.fluid} alt={title} className={styles.painting} />
         </div>
