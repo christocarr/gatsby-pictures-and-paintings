@@ -32,7 +32,9 @@ const Paintings = () => {
   
   return (
     <section>
-      <Title title="Gallery" />
+      <div className="page-title">
+        <Title title="Gallery" /> 
+      </div>
       <div className={styles.galleryContainer}>
         <PaintingList paintings={ paintings } />
       </div>

@@ -48,7 +48,12 @@ section {
   flex-direction: column;
   align-items: center;
   margin: 3rem auto;
-  width: 90%;
+  width: 80%;
+}
+
+.page-title {
+  width: 100%;
+  margin: 0 0 1rem 0;
   text-align: left;
 }
 
@@ -79,7 +84,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   section {
-    width: 80%;
+    width: 70%;
   }
 
   footer {

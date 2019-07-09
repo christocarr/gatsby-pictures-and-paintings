@@ -3,7 +3,9 @@ import Title from '../components/Title'
 
 const About = () => (
   <section>
-    <Title title="About Us" />
+    <div className="page-title">
+      <Title title="About Us"/>
+    </div>
     <div>
       <p>The artworks on offer in our gallery represents a variety of genres, executed in oils, acrylics and mixed media. All  the paintings featured on this website are original and are reasonably priced.</p>
 
