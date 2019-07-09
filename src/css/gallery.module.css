@@ -11,18 +11,5 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .gallery-container {
-    width: 80%;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  .gallery-container {
-    width: 60%;
   }
 }
