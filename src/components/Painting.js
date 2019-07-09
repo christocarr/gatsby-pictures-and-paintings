@@ -9,7 +9,7 @@ const Painting = ({ painting }) => {
 
   return (
       <div className={styles.paintingContainer}>
-        <h3>{title}</h3>
+        <h4>{title}</h4>
         <Img fluid={image.fluid} />
         <AniLink fade to={`/paintings/${slug}`} className={styles.btnDetails}>Details</AniLink>
       </div>
