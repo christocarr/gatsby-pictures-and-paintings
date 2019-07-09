@@ -1,9 +1,13 @@
 .painting-container {
   position: relative;
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 2rem 0 0 0;
   overflow: hidden;
+}
+
+.painting-container:first-of-type {
+  margin: 0;
 }
 
 .btn-details {
