@@ -21,8 +21,8 @@ const Template = ({ data }) => {
         </div>
         <div className={styles.info}>
           <div className={styles.desc}>
-            <p>{`Size: ${size}`}</p>
-            <p>{`Medium: ${medium}`}</p>
+            <p><span>Size:</span> {size}</p>
+            <p><span>Medium:</span> {medium}</p>
           </div>
           <div className={styles.price}>
             <p>{`£${price}`}</p>
