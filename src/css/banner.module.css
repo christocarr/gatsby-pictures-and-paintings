@@ -4,9 +4,28 @@
   justify-content: center;
   align-items: center;
   color: white;
+  
 }
+
+/* .banner h1 {
+  font-size: 1.7em;
+}
+
+.banner h3 {
+  font-size: 1.3em;
+} */
 
 .bullet {
   font-size: 1.5rem;
 
 }
+
+/* @media screen and (min-width: 768px) {
+  .banner h1 {
+    font-size: inherit;
+  }
+  
+  .banner h3 {
+    font-size: initial;
+  }
+} */
