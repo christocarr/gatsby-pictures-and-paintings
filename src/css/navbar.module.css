@@ -38,9 +38,9 @@
 }
 
 .nav-links a {
-  font-size: 1.3em;
+  font-size: 1.1em;
   display: block;
-  margin: 0.5rem 0 0 0;
+  margin: 0.4rem 0 0 0;
   text-decoration: none;
   color: var(--mainBlack);
   transition: var(--mainTransition);
