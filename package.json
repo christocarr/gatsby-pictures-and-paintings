@@ -36,12 +36,11 @@
     "styled-components": "^4.3.2"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
     "prettier": "^1.18.2"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/christocarr/gatsby-pictures-and-paintings"
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
