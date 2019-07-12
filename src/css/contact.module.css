@@ -3,7 +3,7 @@
 }
 
 .center {
-  width: 80vw;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -34,14 +34,14 @@ textarea::placeholder {
 }
 
 @media screen and (min-width: 768px) {
-  .center {
+  /* .center {
     width: 60%;
-  }
+  } */
 }
 
 @media screen and (min-width: 992px) {
   .center {
-    width: 50vw;
+    /* width: 50%; */
     margin: 0 auto;
   }
 }
