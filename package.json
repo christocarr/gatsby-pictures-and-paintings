@@ -17,6 +17,7 @@
     "dotenv": "^8.0.0",
     "gatsby": "^2.8.6",
     "gatsby-background-image": "^0.7.6",
+    "gatsby-cli": "^2.7.13",
     "gatsby-image": "^2.2.4",
     "gatsby-plugin-sharp": "^2.2.2",
     "gatsby-plugin-stripe": "^1.2.1",
