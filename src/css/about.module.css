@@ -1,4 +1,11 @@
+.profile-block {
+  margin-top: 2.5rem;
+}
+
 .profile-block img {
+  margin-right: 1.5rem;
+  border-radius: 50%;
   display: inline-block;
-  float: right;
+  float: left;
+  shape-outside: circle();
 }
