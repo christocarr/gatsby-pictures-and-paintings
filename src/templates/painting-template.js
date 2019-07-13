@@ -26,9 +26,9 @@ const Template = ({ data }) => {
           </div>
           <div className={styles.price}>
             <p>{`£${price}`}</p>
-            <button className={styles.buyButton}>Buy Now</button>
+          </div>
         </div>
-        </div>
+        <button className={styles.buyButton}>Buy Now</button>
       </section>
     </Layout>
   )
