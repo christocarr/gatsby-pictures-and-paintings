@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
 import Hero from '../components/Hero'
@@ -8,7 +8,24 @@ import Title from '../components/Title'
 import styles from '../css/product.module.css'
 
 const Template = ({ data }) => {
-  const { title, price, image, size, medium } = data.painting
+
+  let stripe;
+  useEffect(() => {
+    stripe = window.Stripe("pk_test_JrzXSCBHT21whkB2gZLAEhmN00zHgJkpLZ", {
+
+    })
+  })
+  const redirectToCheckout = async () => {
+    const {error} = await stripe.redirectToCheckout({
+      items: [{sku: sku, quantity: 1}],
+
+      successUrl: "https://pictures-and-paintings.netlify.com/success",
+      cancelUrl: "https://pictures-and-paintings.netlify.com/canceled"
+    })
+    console.warn(error)
+  }
+
+  const { title, price, image, size, medium, sku } = data.painting
   return (
     <Layout>
       <Hero img={image.fluid} />
@@ -28,7 +45,7 @@ const Template = ({ data }) => {
             <p>{`£${price}`}</p>
           </div>
         </div>
-        <button className={styles.buyButton}>Buy Now</button>
+        <button className={styles.buyButton} onClick={redirectToCheckout}>Buy Now</button>
       </section>
     </Layout>
   )
@@ -46,6 +63,7 @@ export const query = graphql`
       }
       size
       medium
+      sku
     }
 }
 `
