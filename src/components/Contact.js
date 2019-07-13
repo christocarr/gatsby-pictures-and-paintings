@@ -5,7 +5,9 @@ import styles from '../css/contact.module.css'
 const Contact = () => {
   return (
     <section>
-      <Title title="Contact Us" />
+      <div className="page-title">
+        <Title title="Contact Us" />
+      </div>
       <div className={styles.center}>
         <form className={styles.form} action="https://formspree.io/chris.carr.dev@gmail.com" method="POST">
           <div>
@@ -21,7 +23,7 @@ const Contact = () => {
             <textarea type="email" name="message" id="message" rows="10" className= {styles.formControl} placeholder="A Message"/>
           </div>
           <div>
-            <input type="submit" value="Send" className={styles.submit} />
+            <input type="submit" value="Send Message" className={styles.submit} />
           </div>
         </form>
       </div>

@@ -17,8 +17,8 @@
   --root-font-size: 16px;
   --h1-font-size: 1.9rem;
   --h2-font-size: 1.6rem;
-  --h3-font-size: 1.3rem;
-  --h4-font-size: 1.2rem;
+  --h3-font-size: 1.4rem;
+  --h4-font-size: 1.1rem;
   --p-font-size: 1em;
 
   --main-transition: all 0.3s linear;
@@ -101,7 +101,7 @@ footer {
 
 @media screen and (min-width: 768px) {
   html {
-    font-size: 18px;
+    --root-font-size: 18px;
   }
 
   section {
