@@ -49,14 +49,14 @@
 }
 
 @media screen and (min-width: 768px) {
-  button {
+  .buy-button {
     width: 50%;
     align-self: flex-end;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  button {
+  .buy-button {
     width: 40%;
   }
 }
