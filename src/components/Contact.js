@@ -21,7 +21,7 @@ const Contact = () => {
             <textarea type="email" name="message" id="message" rows="10" className= {styles.formControl} placeholder="A Message"/>
           </div>
           <div>
-            <input type="submit" value="Transmit" className={styles.submit} />
+            <input type="submit" value="Send" className={styles.submit} />
           </div>
         </form>
       </div>
