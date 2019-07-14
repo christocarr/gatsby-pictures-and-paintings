@@ -5,7 +5,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import styles from '../css/painting.module.css'
 
 const Painting = ({ painting }) => {
-  const { title, id, slug, price, size, medium, image } = painting
+  const { title, slug, image } = painting
 
   return (
       <div className={styles.paintingContainer}>

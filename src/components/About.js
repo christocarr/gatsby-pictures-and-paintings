@@ -15,7 +15,7 @@ const About = () => (
 
       <p>Richard Carr's gallery showcases landscapes, fantasy art, surreal art and abstract art.</p>
       <div className={styles.profileBlock}>
-        <img src={profilePic} alt="Richard Carr's profile image" />
+        <img src={profilePic} alt="Richard Carr's profile" />
         <p>Richard studied art in the seventies at the Pretoria School of Art in South Africa. His major subjects were painting and sculpture. While busy with his fine art studies he also qualified as an art teacher.</p>
         
         <p>After leaving art school he taught in Pretoria for two years before leaving the classroom to become a graphic artist and photographer - subjects he had studied at art school. He never stopped painting and drawing however and, when he took an early retirement, it was the natural thing for him to decide to embark on a career as an artist.</p>
