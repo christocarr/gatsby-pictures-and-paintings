@@ -100,8 +100,8 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  html {
-    --root-font-size: 18px;
+  :root {
+    --root-font-size: 17px;
   }
 
   section {
@@ -114,6 +114,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+  :root {
+    --root-font-size: 18px;
+  }
+
   section {
     width: 60%;
   }
@@ -124,6 +128,10 @@ footer {
 }
 
 @media screen and (min-width: 1440px) {
+  :root {
+    --root-font-size: 20px;
+  }
+
   section {
     width: 50%;
   }
