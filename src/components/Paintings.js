@@ -16,6 +16,7 @@ const getPaintings = graphql`
           price
           size
           medium
+          available
           image {
             fluid {
               ...GatsbyContentfulFluid
