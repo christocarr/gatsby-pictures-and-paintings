@@ -1,0 +1,15 @@
+
+.ribbon {
+  position: absolute;
+  bottom: 25px;
+  right: -50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+  color: white;
+  background-color: red;
+  border: 1px solid darkred;
+  transform: rotate(-40deg);
+}
