@@ -25,7 +25,7 @@ const Template = ({ data }) => {
     console.warn(error)
   }
 
-  const { title, price, image, size, medium, sku } = data.painting
+  const { title, price, image, size, medium, available, sku } = data.painting
   return (
     <Layout>
       <Hero img={image.fluid} />
@@ -45,7 +45,10 @@ const Template = ({ data }) => {
             <p>{`£${price}`}</p>
           </div>
         </div>
-        <button className={styles.buyButton} onClick={redirectToCheckout}>Buy Now</button>
+        {available 
+        ? <button className={styles.buyButton} onClick=       {redirectToCheckout}>Buy Now</button>
+        : <button disabled className={styles.disableButton} onClick={redirectToCheckout}>Not Available</button>
+        }
       </section>
     </Layout>
   )
@@ -61,6 +64,7 @@ export const query = graphql`
           ...GatsbyContentfulFluid
         }
       }
+      available
       size
       medium
       sku
