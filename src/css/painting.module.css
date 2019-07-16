@@ -38,8 +38,12 @@
 
 @media screen and (min-width: 768px) {
   .painting-container {
-    width: 40%;
+    width: 45%;
     margin: 4rem 0 0 0;
+  }
+
+  .painting-container:nth-child(2) {
+    margin: 0;
   }
 }
 
