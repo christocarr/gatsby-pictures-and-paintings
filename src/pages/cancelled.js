@@ -7,17 +7,16 @@ export default ({ data }) => {
   return (
   <Layout>
     <Hero img={data.image.childImageSharp.fluid} />
-    <section>
-      <h2>Thank you for your purchase!</h2>
-      <AniLink fade to="/">Home</AniLink>
-    </section>
+    <h2>Your transaction was cancelled.</h2>
+    <p>Your card has not been charged.</p>
+    <AniLink fade to="/gallery">Gallery</AniLink>
   </Layout>
   )
 }
 
 export const query = graphql`
   query {
-    image: file(relativePath: {eq: "success_hero.jpg"}) {
+    image: file(relativePath: {eq: "cancelled_hero.jpg"}) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid

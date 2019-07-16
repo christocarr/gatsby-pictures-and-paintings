@@ -19,8 +19,10 @@ const Template = ({ data }) => {
     const {error} = await stripe.redirectToCheckout({
       items: [{sku: sku, quantity: 1}],
 
-      successUrl: "https://pictures-and-paintings.netlify.com/success",
-      cancelUrl: "https://pictures-and-paintings.netlify.com/canceled"
+      successUrl: "http://localhost:8000/success",
+      cancelUrl: "http://localhost:8000/cancelled"
+      // successUrl: "https://pictures-and-paintings.netlify.com/success",
+      // cancelUrl: "https://pictures-and-paintings.netlify.com/cancelled"
     })
     console.warn(error)
   }
