@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-cookiehub`,
       options: {
-        cookihubId: `pictures-and-paintings`,
+        cookiehubId: `81c004a4`,
         trackingId: `UA-143993465-1`,
         head: true,
 
