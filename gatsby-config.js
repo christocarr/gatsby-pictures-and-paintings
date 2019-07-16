@@ -39,6 +39,15 @@ module.exports = {
         spaceId: process.env.SPACE_ID,
         accessToken: process.env.CONTENT_DELIVERY_API
       }
+    },
+    {
+      resolve: `gatsby-plugin-cookiehub`,
+      options: {
+        cookihubId: `pictures-and-paintings`,
+        trackingId: `UA-143993465-1`,
+        head: true,
+
+      }
     }
   ]
 }
