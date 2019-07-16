@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className={styles.navbar}>
       <div className={styles.center}>
-        <img src={logo} alt="logo" />
+        <AniLink fade to="/"><img src={logo} alt="logo" /></AniLink>
         <button className={styles.menuButton} onClick={toggleNav}>
           <FaBars className={styles.menuIcon}/>
         </button>
