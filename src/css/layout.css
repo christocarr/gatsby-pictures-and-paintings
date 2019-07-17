@@ -95,7 +95,7 @@ footer {
   flex-direction: column-reverse;
   justify-content: space-evenly;
   align-items: center;
-  height: 15vh;
+  height: 20vh;
   background-color: var(--main-bg-color);
 }
 
