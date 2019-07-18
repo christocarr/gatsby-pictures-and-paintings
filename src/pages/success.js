@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 export default ({ data }) => {
   return (
   <Layout>
+    <SEO title="success" desc="Purchase was successful" />
     <Hero img={data.image.childImageSharp.fluid} />
     <section>
       <h2>Thank you for your purchase!</h2>
