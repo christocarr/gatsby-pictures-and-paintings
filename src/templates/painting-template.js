@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import SEO from '../components/SEO'
 import Hero from '../components/Hero'
 import Img from 'gatsby-image'
 import Title from '../components/Title'
@@ -30,6 +31,7 @@ const Template = ({ data }) => {
   const { title, price, image, size, medium, available, sku } = data.painting
   return (
     <Layout>
+      <SEO title={title} desc="Painting description" />
       <Hero img={image.fluid} />
       <section>
         <div className="page-title">
