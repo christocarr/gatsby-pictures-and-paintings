@@ -7,7 +7,7 @@ import styles from '../css/footer.module.css'
 const Footer = () => {
   return (
     <footer>
-      <p className={styles.credit}>Developed by <Link to="https://pictures-and-paintings.netlify.com/">Chris Carr</Link></p>
+      <p className={styles.credit}>Developed by <Link to="https://iamchriscarr.com">Chris Carr</Link></p>
       <p className={styles.copyright}>
         &copy; Richard Carr 2019 - All rights reserved
       </p>
