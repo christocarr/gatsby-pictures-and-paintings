@@ -5,7 +5,9 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     title: `Pictures and Paintings`,
-    description: `Painting Art Store`
+    description: `Painting Art Store`,
+    image: 'default.jpg',
+    siteUrl: `https://pictures-and-paintings.netlify.com`
   },
   plugins: [
     {
@@ -19,6 +21,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-stripe`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-stripe`,
       options: {
