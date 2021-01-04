@@ -11,7 +11,7 @@ const Footer = () => {
 				Developed by <a href="https://www.iamchriscarr.com">Chris Carr</a>
 			</p>
 			<p className={styles.copyright}>
-				&copy; Richard Carr 2020 - All rights reserved
+				&copy; Richard Carr 2021 - All rights reserved
 			</p>
 			<ul className={styles.footerNav}>
 				{/* <AniLink fade to="/">Home</AniLink>
