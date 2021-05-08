@@ -1,6 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-import BackgroundImage from 'gatsby-background-image'
+import React from "react"
+import styled from "styled-components"
+import BackgroundImage from "gatsby-background-image"
 
 const Hero = ({ img, className, children, home }) => {
   return (
@@ -14,9 +14,8 @@ export default styled(Hero)`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items:center;
-  min-height: ${props => props.home ? "80vh" : "20vh" }
+  align-items: center;
+  min-height: ${props => (props.home ? "80vh" : "20vh")};
   background-position: center;
   background-size: cover;
-
 `

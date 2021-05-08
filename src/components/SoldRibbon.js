@@ -1,13 +1,9 @@
-import React from 'react'
+import React from "react"
 
-import styles from '../css/soldRibbon.module.css'
+import * as styles from "../css/soldRibbon.module.css"
 
 const SoldRibbon = () => {
-  return (
-    <div className={styles.ribbon}>
-      Sold
-    </div>
-  )
+  return <div className={styles.ribbon}>Sold</div>
 }
 
 export default SoldRibbon

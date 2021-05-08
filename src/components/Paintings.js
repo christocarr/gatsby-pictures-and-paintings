@@ -1,9 +1,9 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import PaintingList from './PaintingList'
-import Title from '../components/Title'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import PaintingList from "./PaintingList"
+import Title from "../components/Title"
 
-import styles from '../css/gallery.module.css'
+import * as styles from "../css/gallery.module.css"
 
 const getPaintings = graphql`
   query {
@@ -30,18 +30,17 @@ const getPaintings = graphql`
 
 const Paintings = () => {
   const { paintings } = useStaticQuery(getPaintings)
-  
+
   return (
     <section>
       <div className="page-title">
-        <Title title="Gallery" /> 
+        <Title title="Gallery" />
       </div>
       <div className={styles.galleryContainer}>
-        <PaintingList paintings={ paintings } />
+        <PaintingList paintings={paintings} />
       </div>
     </section>
   )
-
 }
 
 export default Paintings
