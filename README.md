@@ -7,7 +7,7 @@ JAMStack E-commerce website built with Gatsby, Stripe, and Contentful CMS.
 
 * [Gatsby] - JAMStack React framework
 * [Contentful] - headless CMS
-* [Stripe] - e-commerces payments solution
+* [Stripe] - e-commerce payments solution
 
 ### Installation
 
